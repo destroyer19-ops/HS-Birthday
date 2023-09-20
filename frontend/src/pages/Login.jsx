@@ -17,7 +17,7 @@ const Login = () => {
   const facebook = async (e) => {
     e.preventDefault();
     try {
-      const url = 'http://localhost:5000/auth/facebook';
+      const url = 'https://hs-birthday-api.vercel.app/';
       console.log('Request URL:', url);
       window.location.href = url;
 
@@ -59,7 +59,7 @@ const Login = () => {
         <p className="mt-8 text-xs font-light text-center text-gray-700">
           Don't have an account?{' '}
           <a
-            href="http://localhost:5000/auth/google"
+            href="https://hs-birthday-api.vercel.app/"
             className="font-medium text-blue-600 hover:underline"
           >
             Sign up on KingsChat
