@@ -21,7 +21,9 @@ app.use(cors({
     methods: "GET,POST,PUT,DELETE",
     credentials: true
 }))
-
+app.get('/', (req,res)=>{
+    res.json('Hello')
+})
 // app.use(notFound)
 app.use('/auth/facebook', facebookRoute)
 app.listen(PORT, ()=> {
