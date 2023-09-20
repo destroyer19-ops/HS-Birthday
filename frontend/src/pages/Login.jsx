@@ -13,9 +13,10 @@
             e.preventDefault();
             try {
                 // const url = `${import.meta.env.VITE_REACT_APP_API_URL}/auth/google`;
-                const url = 'http://localhost:5000/auth/facebook'
+                const url = 'https://hs-birthday-api.vercel.app'
                 console.log('Request URL:', url);
-                window.location.href = url;                const response = await axios.get(url, {});
+                window.location.href = url;                
+                const response = await axios.get(url, {});
                 console.log('Response:', response);
 
                 if (response.status === 200) {
@@ -59,7 +60,7 @@
                             {" "}
                             Don't have an account?{" "}
                             <a
-                                href="http://localhost:5000/auth/google"
+                                href="https://hs-birthday-api.vercel.app"
                                 className="font-medium text-blue-600 hover:underline"
                             >
                                 Sign up on KingsChat
